@@ -9,7 +9,7 @@
                     <div class="col-md-12">
                         <h1>About Us</h1>
                         <ul class="crumb">
-                            <li><a href="index.html">Home</a></li>
+                            <li><a href="{{ url('/') }}">Home</a></li>
                             <li class="sep">/</li>
                             <li>About Us</li>
                         </ul>

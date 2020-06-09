@@ -3,7 +3,7 @@
 
 /**
  * A helper file for Laravel, to provide autocomplete information to your IDE
- * Generated for Laravel 7.13.0 on 2020-05-28 07:28:31.
+ * Generated for Laravel 7.13.0 on 2020-06-08 00:27:18.
  *
  * This file should not be included in your code, only analyzed by your IDE!
  *
@@ -11186,6 +11186,26 @@ namespace Illuminate\Support\Facades {
         {
                         return \Illuminate\Routing\ResponseFactory::hasMacro($name);
         }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function success($message)
+        {
+                        return \Illuminate\Routing\ResponseFactory::success($message);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function failed($message, $code = 0)
+        {
+                        return \Illuminate\Routing\ResponseFactory::failed($message, $code);
+        }
          
     }
 
@@ -15305,6 +15325,142 @@ namespace Illuminate\Support {
  
 }
 
+namespace Cyvelnet\Laravel5Fractal\Facades { 
+
+    /**
+     * Class Fractal.
+     *
+     */ 
+    class Fractal {
+        
+        /**
+         * add additional meta data to transformed data.
+         *
+         * @param $key
+         * @param $data
+         * @return \Cyvelnet\Laravel5Fractal\FractalServices 
+         * @static 
+         */ 
+        public static function addMeta($key, $data = null)
+        {
+                        /** @var \Cyvelnet\Laravel5Fractal\FractalServices $instance */
+                        return $instance->addMeta($key, $data);
+        }
+        
+        /**
+         * transform resource collection.
+         *
+         * @param $items
+         * @param \League\Fractal\TransformerAbstract|callable|\Closure $transformer
+         * @param null $resourceKey
+         * @param \Cyvelnet\Laravel5Fractal\PaginatorInterface $adapter
+         * @return \Cyvelnet\Laravel5Fractal\Adapters\ScopeDataAdapter|mixed 
+         * @static 
+         */ 
+        public static function collection($items, $transformer, $resourceKey = null, $adapter = null)
+        {
+                        /** @var \Cyvelnet\Laravel5Fractal\FractalServices $instance */
+                        return $instance->collection($items, $transformer, $resourceKey, $adapter);
+        }
+        
+        /**
+         * excludes sub level from data transformer.
+         *
+         * @param string|array $excludes
+         * @return \Cyvelnet\Laravel5Fractal\FractalServices 
+         * @static 
+         */ 
+        public static function excludes($excludes)
+        {
+                        /** @var \Cyvelnet\Laravel5Fractal\FractalServices $instance */
+                        return $instance->excludes($excludes);
+        }
+        
+        /**
+         * Parse field parameter.
+         *
+         * @param array $fieldsets Array of fields to include. It must be an array
+         *                         whose keys are resource types and values a string
+         *                         of the fields to return, separated by a comma
+         * @return \Cyvelnet\Laravel5Fractal\FractalServices 
+         * @static 
+         */ 
+        public static function fieldsets($fieldsets = [])
+        {
+                        /** @var \Cyvelnet\Laravel5Fractal\FractalServices $instance */
+                        return $instance->fieldsets($fieldsets);
+        }
+        
+        /**
+         * 
+         *
+         * @return mixed 
+         * @static 
+         */ 
+        public static function getManager()
+        {
+                        /** @var \Cyvelnet\Laravel5Fractal\FractalServices $instance */
+                        return $instance->getManager();
+        }
+        
+        /**
+         * includes sub level data transformer.
+         *
+         * @param string|array $includes
+         * @return \Cyvelnet\Laravel5Fractal\FractalServices 
+         * @static 
+         */ 
+        public static function includes($includes)
+        {
+                        /** @var \Cyvelnet\Laravel5Fractal\FractalServices $instance */
+                        return $instance->includes($includes);
+        }
+        
+        /**
+         * transform a single resource.
+         *
+         * @param $item
+         * @param \League\Fractal\TransformerAbstract|callable|\Closure $transformer
+         * @param null $resourceKey
+         * @return \Cyvelnet\Laravel5Fractal\Adapters\ScopeDataAdapter|mixed 
+         * @static 
+         */ 
+        public static function item($item, $transformer, $resourceKey = null)
+        {
+                        /** @var \Cyvelnet\Laravel5Fractal\FractalServices $instance */
+                        return $instance->item($item, $transformer, $resourceKey);
+        }
+        
+        /**
+         * set data transformation recursion limit.
+         *
+         * @param $limit
+         * @return \Cyvelnet\Laravel5Fractal\FractalServices 
+         * @static 
+         */ 
+        public static function setRecursionLimit($limit)
+        {
+                        /** @var \Cyvelnet\Laravel5Fractal\FractalServices $instance */
+                        return $instance->setRecursionLimit($limit);
+        }
+        
+        /**
+         * set data serializer.
+         *
+         * @param \League\Fractal\Serializer\SerializerAbstract $serializer
+         * @return \Cyvelnet\Laravel5Fractal\FractalServices 
+         * @static 
+         */ 
+        public static function setSerializer($serializer)
+        {
+                        /** @var \Cyvelnet\Laravel5Fractal\FractalServices $instance */
+                        return $instance->setSerializer($serializer);
+        }
+         
+    }
+ 
+}
+
 namespace Facade\Ignition\Facades { 
 
     /**
@@ -15564,6 +15720,75 @@ namespace Facade\Ignition\Facades {
         {
                         /** @var \Facade\FlareClient\Flare $instance */
                         return $instance->group($groupName, $properties);
+        }
+         
+    }
+ 
+}
+
+namespace Intervention\Image\Facades { 
+
+    /**
+     * 
+     *
+     */ 
+    class Image {
+        
+        /**
+         * Overrides configuration settings
+         *
+         * @param array $config
+         * @return self 
+         * @static 
+         */ 
+        public static function configure($config = [])
+        {
+                        /** @var \Intervention\Image\ImageManager $instance */
+                        return $instance->configure($config);
+        }
+        
+        /**
+         * Initiates an Image instance from different input types
+         *
+         * @param mixed $data
+         * @return \Intervention\Image\Image 
+         * @static 
+         */ 
+        public static function make($data)
+        {
+                        /** @var \Intervention\Image\ImageManager $instance */
+                        return $instance->make($data);
+        }
+        
+        /**
+         * Creates an empty image canvas
+         *
+         * @param int $width
+         * @param int $height
+         * @param mixed $background
+         * @return \Intervention\Image\Image 
+         * @static 
+         */ 
+        public static function canvas($width, $height, $background = null)
+        {
+                        /** @var \Intervention\Image\ImageManager $instance */
+                        return $instance->canvas($width, $height, $background);
+        }
+        
+        /**
+         * Create new cached image and run callback
+         * (requires additional package intervention/imagecache)
+         *
+         * @param \Closure $callback
+         * @param int $lifetime
+         * @param boolean $returnObj
+         * @return \Image 
+         * @static 
+         */ 
+        public static function cache($callback, $lifetime = null, $returnObj = false)
+        {
+                        /** @var \Intervention\Image\ImageManager $instance */
+                        return $instance->cache($callback, $lifetime, $returnObj);
         }
          
     }
@@ -18519,7 +18744,11 @@ namespace  {
 
     class View extends \Illuminate\Support\Facades\View {}
 
+    class Fractal extends \Cyvelnet\Laravel5Fractal\Facades\Fractal {}
+
     class Flare extends \Facade\Ignition\Facades\Flare {}
+
+    class Image extends \Intervention\Image\Facades\Image {}
  
 }
 

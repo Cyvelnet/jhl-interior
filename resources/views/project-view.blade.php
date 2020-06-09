@@ -1,52 +1,81 @@
 <div class="container project-view">
-    
+
 	<div class="row">
-        <div class="col-md-8 project-images">
-            <img src="images/portfolio/view/p1_a.jpg" alt="" class="img-responsive" />
-            <img src="images/portfolio/view/p1_b.jpg" alt="" class="img-responsive" />
-            <img src="images/portfolio/view/p1_c.jpg" alt="" class="img-responsive" />
-        </div>
-        <div class="col-md-4">
-            <div class="project-info">
-                <h2>Eco Green Interior</h2>
+		<div class="col-md-8 project-images">
 
-                <div class="details">
-                    <div class="info-text">
-                        <span class="title">Date</span>
-                        <span class="val">March 2014</span>
-                    </div>
+			@foreach($project->images as $key => $image)
+				<img src="{{ $image->url }}" alt="{{ $image->filename }}" class="img-responsive"/>
+			@endforeach
 
-                    <div class="info-text">
-                        <span class="title">Location</span>
-                        <span class="val">Paris, France</span>
-                    </div>
+			@if(!$project->images->count())
+					<img src="https://via.placeholder.com/645x430" class="img-responsive"/>
+			@endif
 
-                    <div class="info-text">
-                        <span class="title">Value</span>
-                        <span class="val">$10,000</span>
-                    </div>
+		</div>
+		<div class="col-md-4">
+			<div class="project-info">
+				<h2>{{ $project->name }}</h2>
 
-                    <div class="info-text">
-                        <span class="title">Client</span>
-                        <span class="val">Century 21</span>
-                    </div>
+				<div class="details">
+					@if($project->date)
 
-                    <div class="info-text">
-                        <span class="title">Category</span>
-                        <span class="val">Residential</span>
-                    </div>
-                </div>
+						<div class="info-text">
+							<span class="title">Date</span>
+							<span class="val">{{ $project->date->format('F Y') }}</span>
+						</div>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					@endif
 
-                <p>
-                    <h4>Our Solutions</h4>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                </p>
-                        
-                        
-            </div>
-        </div>
-    </div>
+					@if($project->location)
+
+						<div class="info-text">
+							<span class="title">Location</span>
+							<span class="val">{{ $project->location }}</span>
+						</div>
+
+					@endif
+
+					@if($project->value)
+
+
+						<div class="info-text">
+							<span class="title">Value</span>
+							<span class="val">{{ $project->currency }}{{ number_format($project->value, 2) }}</span>
+						</div>
+
+					@endif
+
+					<div class="info-text">
+						<span class="title">Client</span>
+						<span class="val">{{ $project->client_name }}</span>
+					</div>
+
+					@if($project->category)
+
+						<div class="info-text">
+							<span class="title">Category</span>
+							<span class="val">{{ $project->category->name }}</span>
+						</div>
+
+					@endif
+
+				</div>
+
+				@if($project->highlight)
+
+					<p>
+						{!! $project->highlight !!}
+					</p>
+
+				@endif
+
+				<p>
+				<h4>Our Solutions</h4>
+				{!! $project->description !!}
+				</p>
+
+
+			</div>
+		</div>
+	</div>
 </div>

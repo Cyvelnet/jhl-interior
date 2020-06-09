@@ -176,6 +176,8 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         App\Providers\LocalServiceProvider::class,
+        App\Providers\AdminServiceProvider::class,
+        App\Providers\MacroServiceProvider::class,
 
     ],
 

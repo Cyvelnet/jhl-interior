@@ -1,8 +1,21 @@
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import "extras/vue-multiselect";
 
-// Variables
-@import 'variables';
+label.optional:after {
+  content: " (Optional)";
+  font-size: 10px;
+  color: #aaa;
+}
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+.invalid-feedback + .form-text {
+  margin-top: -18px !important;
+}
+
+.toasted-container.top-right {
+  top: 7%;
+  right: 0;
+}
+
+.swal2-html-container {
+  padding-left: 12px;
+  padding-right: 12px;
+}
