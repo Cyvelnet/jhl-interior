@@ -10,10 +10,10 @@
 		  content="architecture,building,business,garden design,house,interior design,landscape design,property,studio,security system,cleaning,services maintanance">
 	<meta name="author" content="">
 
-	<meta property="og:title" content="Covid19">
+{{--	<meta property="og:title" content="Covid19">
 	<meta property="og:image" content="http://jhl.pika.asia/images/covid.jpg">
 	<meta property="og:description" content="Sample description">
-	<meta property="og:url" content="http://jhl.pika.asia/">
+	<meta property="og:url" content="http://jhl.pika.asia/">--}}
 
 
 	<!--[if lt IE 9]>

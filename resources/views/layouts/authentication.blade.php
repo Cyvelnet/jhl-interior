@@ -3,9 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Login | ThemeKit - Admin Template</title>
-	<meta name="description" content="">
-	<meta name="keywords" content="">
+	<title>{{ config('app.name') }}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+		  content="JHL MAJU SDN BHD was managed by a group of qualified, enthusiatic and experienced individuals. The main business activities were interior design, construction & renovation and technological services.">
+	<meta name="keywords"
+		  content="architecture,building,business,garden design,house,interior design,landscape design,property,studio,security system,cleaning,services maintanance">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="icon" href="/admin/favicon.ico" type="image/x-icon"/>
