@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>{{ config('app.name') }}</title>
+	<title>Login | {{ config('app.name') }}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description"
 		  content="JHL MAJU SDN BHD was managed by a group of qualified, enthusiatic and experienced individuals. The main business activities were interior design, construction & renovation and technological services.">
