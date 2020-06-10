@@ -12,7 +12,7 @@ class ProjectStatisticController extends Controller
     {
         $projects = Project::get(['name', 'progress', 'is_published']);
 
-        $total = $projects->count();
+        $total = max($projects->count(), 1);
 
         $published = $projects->filter(function ($project) {
             return $project->is_published === true;
