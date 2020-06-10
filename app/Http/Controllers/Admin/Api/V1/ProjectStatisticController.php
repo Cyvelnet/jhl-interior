@@ -12,7 +12,7 @@ class ProjectStatisticController extends Controller
     {
         $projects = Project::get(['name', 'progress', 'is_published']);
 
-        $total = max($projects->count(), 1);
+        $total = $projects->count();
 
         $published = $projects->filter(function ($project) {
             return $project->is_published === true;
@@ -30,11 +30,11 @@ class ProjectStatisticController extends Controller
         return response([
             'total'             => $total,
             'ongoing'           => $ongoing,
-            'ongoing_percent'   => ($ongoing / $total) * 100,
+            'ongoing_percent'   => ($ongoing / max($total, 1)) * 100,
             'completed'         => $completed,
-            'completed_percent' => ($completed / $total) * 100,
+            'completed_percent' => ($completed / max($total, 1)) * 100,
             'published'         => $published,
-            'published_percent' => ($published / $total) * 100,
+            'published_percent' => ($published / max($total, 1)) * 100,
         ]);
     }
 }
