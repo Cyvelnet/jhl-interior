@@ -31,10 +31,11 @@ class HomePageController extends Controller
             return $project;
         });
 
+        $predefinedCategories = $this->getPredefinedProjectCategories($projects, 'Recent Projects');
 
         $categories = ProjectCategory::whereHas('projects')->whereIn('id',
             $projects->pluck('project_categories_id')->unique())->take(5)->get();
 
-        return view('home', compact('projects', 'categories'));
+        return view('home', compact('projects', 'categories', 'predefinedCategories'));
     }
 }

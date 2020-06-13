@@ -226,9 +226,10 @@
 				<div class="row">
 					<div class="col-md-12 text-center">
 						<ul id="filters" class="wow fadeInUp" data-wow-delay="0s">
-							<li><a href="#" data-filter="*" class="selected">All Projects</a></li>
-							<li><a href="#" data-filter=".new">New Projects</a></li>
-							<li><a href="#" data-filter=".completed">Completed Projects</a></li>
+
+							@foreach($predefinedCategories as $class => $category)
+								<li><a href="#" data-filter="{{ $class }}" class="{{ $class =='*' ? 'selected': '' }}">{{ $category }}</a></li>
+							@endforeach
 
 							@foreach($categories as $key => $category)
 								<li><a href="#" data-filter=".{{ \Illuminate\Support\Str::snake($category->name) }}">{{ $category->name }}</a></li>

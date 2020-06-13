@@ -46,7 +46,9 @@ class ProjectController extends Controller
 
         $categories = ProjectCategory::whereHas('projects')->take(5)->get();
 
-        return view('projects', compact('projects', 'categories'));
+        $predefinedCategories = $this->getPredefinedProjectCategories($projects);
+
+        return view('projects', compact('projects', 'categories', 'predefinedCategories'));
     }
 
     public function show(Project $project)
