@@ -10,7 +10,7 @@
 				<ul>
 					<li data-transition="fade" data-slotamount="10" data-masterspeed="200" data-thumb="">
 						<!--  BACKGROUND IMAGE -->
-						<img src="images/slider/wide1.jpg" alt=""/>
+						<img src="/images/slider/wide1.jpg" alt=""/>
 						<div class="tp-caption big-white sft" data-x="0" data-y="150" data-speed="800" data-start="400"
 							 data-easing="easeInOutExpo"
 							 data-endspeed="450">
@@ -21,19 +21,19 @@
 							 data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:2;scaleY:2;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
 							 data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.85;scaleY:0.85;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
 							 data-speed="800" data-start="400" data-easing="easeInOutExpo" data-endspeed="400">
-							Interior Design
+							Rectification Works
 						</div>
 
 						<div class="tp-caption sfb" data-x="0" data-y="335" data-speed="400" data-start="800"
 							 data-easing="easeInOutExpo">
-							<a href="#" class="btn-slider">Our Portfolio
+							<a href="{{ route('projects.index') }}" class="btn-slider">Our Portfolio
 							</a>
 						</div>
 					</li>
 
 					<li data-transition="fade" data-slotamount="10" data-masterspeed="200" data-thumb="">
 						<!--  BACKGROUND IMAGE -->
-						<img src="images/slider/wide2.jpg" alt=""/>
+						<img src="/images/slider/wide2.jpg" alt=""/>
 						<div class="tp-caption big-white sft" data-x="0" data-y="160" data-speed="800" data-start="400"
 							 data-easing="easeInOutExpo"
 							 data-endspeed="450">
@@ -56,7 +56,7 @@
 
 					<li data-transition="fade" data-slotamount="10" data-masterspeed="200" data-thumb="">
 						<!--  BACKGROUND IMAGE -->
-						<img src="images/slider/wide3.jpg" alt=""/>
+						<img src="/images/slider/wide3.jpg" alt=""/>
 						<div class="tp-caption big-white sft" data-x="0" data-y="160" data-speed="800" data-start="400"
 							 data-easing="easeInOutExpo"
 							 data-endspeed="450">
@@ -100,7 +100,7 @@
 						had tons of success with out clients. Will you be next ?
 						<div class="spacer-single"></div>
 						<a class="image-popup-no-margins" href="images/misc/pic_1.jpg">
-							<img src="images/misc/pic_1.jpg" class="img-responsive" alt="">
+							<img src="/images/misc/pic_1.jpg" class="img-responsive" alt="">
 						</a>
 					</div>
 
@@ -110,7 +110,7 @@
 						industrial, commercial and hotel industry. We have been joining with kits if company that is
 						responsible and trustworthy which will be providing a quality renovation services.
 						<div class="spacer-single"></div>
-						<img src="images/misc/pic_2.jpg" class="img-responsive" alt="">
+						<img src="/images/misc/pic_2.jpg" class="img-responsive" alt="">
 					</div>
 
 					<div class="col-md-4 wow fadeInRight">
@@ -120,7 +120,7 @@
 						Autocad drawings, 3D perspective for a complete proposal. Nevertheless, we will also provide a
 						lost of costing within client;s budget.
 						<div class="spacer-single"></div>
-						<img src="images/misc/pic_3.jpg" class="img-responsive" alt="">
+						<img src="/images/misc/pic_3.jpg" class="img-responsive" alt="">
 					</div>
 
 				</div>
@@ -274,7 +274,7 @@
 				{{--                                </span>--}}
 				{{--						</a>--}}
 
-				{{--						<img src="images/portfolio/pf%20(2).jpg" alt=""/>--}}
+				{{--						<img src="/images/portfolio/pf%20(2).jpg" alt=""/>--}}
 				{{--					</div>--}}
 				{{--				</div>--}}
 				{{--				<!-- close gallery item -->--}}
@@ -290,7 +290,7 @@
 				{{--                                </span>--}}
 				{{--						</a>--}}
 
-				{{--						<img src="images/portfolio/pf%20(3).jpg" alt=""/>--}}
+				{{--						<img src="/images/portfolio/pf%20(3).jpg" alt=""/>--}}
 				{{--					</div>--}}
 				{{--				</div>--}}
 				{{--				<!-- close gallery item -->--}}
@@ -305,7 +305,7 @@
 				{{--                                    </span>--}}
 				{{--                                </span>--}}
 				{{--						</a>--}}
-				{{--						<img src="images/portfolio/pf%20(4).jpg" alt=""/>--}}
+				{{--						<img src="/images/portfolio/pf%20(4).jpg" alt=""/>--}}
 				{{--					</div>--}}
 				{{--				</div>--}}
 				{{--				<!-- close gallery item -->--}}
@@ -320,7 +320,7 @@
 				{{--                                    </span>--}}
 				{{--                                </span>--}}
 				{{--						</a>--}}
-				{{--						<img src="images/portfolio/pf%20(5).jpg" alt=""/>--}}
+				{{--						<img src="/images/portfolio/pf%20(5).jpg" alt=""/>--}}
 				{{--					</div>--}}
 				{{--				</div>--}}
 				{{--				<!-- close gallery item -->--}}
@@ -335,23 +335,7 @@
 				{{--                                    </span>--}}
 				{{--                                </span>--}}
 				{{--						</a>--}}
-				{{--						<img src="images/portfolio/pf%20(6).jpg" alt=""/>--}}
-				{{--					</div>--}}
-				{{--				</div>--}}
-				{{--				<!-- close gallery item -->--}}
-
-				{{--				<!-- gallery item -->--}}
-				{{--				<div class="item new">--}}
-				{{--					<div class="picframe">--}}
-				{{--						<a class="simple-ajax-popup-align-top" href="{{ route('projects.show', $project->id) }}">--}}
-				{{--                                <span class="overlay">--}}
-				{{--                                    <span class="pf_text">--}}
-				{{--                                        <span class="project-name">Title</span>--}}
-				{{--                                    </span>--}}
-				{{--                                </span>--}}
-				{{--						</a>--}}
-
-				{{--						<img src="images/portfolio/pf%20(7).jpg" alt=""/>--}}
+				{{--						<img src="/images/portfolio/pf%20(6).jpg" alt=""/>--}}
 				{{--					</div>--}}
 				{{--				</div>--}}
 				{{--				<!-- close gallery item -->--}}
@@ -367,7 +351,23 @@
 				{{--                                </span>--}}
 				{{--						</a>--}}
 
-				{{--						<img src="images/portfolio/pf%20(8).jpg" alt=""/>--}}
+				{{--						<img src="/images/portfolio/pf%20(7).jpg" alt=""/>--}}
+				{{--					</div>--}}
+				{{--				</div>--}}
+				{{--				<!-- close gallery item -->--}}
+
+				{{--				<!-- gallery item -->--}}
+				{{--				<div class="item new">--}}
+				{{--					<div class="picframe">--}}
+				{{--						<a class="simple-ajax-popup-align-top" href="{{ route('projects.show', $project->id) }}">--}}
+				{{--                                <span class="overlay">--}}
+				{{--                                    <span class="pf_text">--}}
+				{{--                                        <span class="project-name">Title</span>--}}
+				{{--                                    </span>--}}
+				{{--                                </span>--}}
+				{{--						</a>--}}
+
+				{{--						<img src="/images/portfolio/pf%20(8).jpg" alt=""/>--}}
 				{{--					</div>--}}
 				{{--				</div>--}}
 				{{--				<!-- close gallery item -->--}}
@@ -383,7 +383,7 @@
 				{{--                                </span>--}}
 				{{--						</a>--}}
 
-				{{--						<img src="images/portfolio/pf%20(9).jpg" alt=""/>--}}
+				{{--						<img src="/images/portfolio/pf%20(9).jpg" alt=""/>--}}
 				{{--					</div>--}}
 				{{--				</div>--}}
 				{{--				<!-- close gallery item -->--}}
@@ -399,7 +399,7 @@
 				{{--                                </span>--}}
 				{{--						</a>--}}
 
-				{{--						<img src="images/portfolio/pf%20(10).jpg" alt=""/>--}}
+				{{--						<img src="/images/portfolio/pf%20(10).jpg" alt=""/>--}}
 				{{--					</div>--}}
 				{{--				</div>--}}
 				{{--				<!-- close gallery item -->--}}
@@ -415,7 +415,7 @@
 				{{--                                </span>--}}
 				{{--						</a>--}}
 
-				{{--						<img src="images/portfolio/pf%20(11).jpg" alt=""/>--}}
+				{{--						<img src="/images/portfolio/pf%20(11).jpg" alt=""/>--}}
 				{{--					</div>--}}
 				{{--				</div>--}}
 				{{--				<!-- close gallery item -->--}}
@@ -431,7 +431,7 @@
 				{{--                                </span>--}}
 				{{--						</a>--}}
 
-				{{--						<img src="images/portfolio/pf%20(12).jpg" alt=""/>--}}
+				{{--						<img src="/images/portfolio/pf%20(12).jpg" alt=""/>--}}
 				{{--					</div>--}}
 				{{--				</div>--}}
 				{{--				<!-- close gallery item -->--}}
