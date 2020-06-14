@@ -8,13 +8,15 @@
 		  content="JHL MAJU SDN BHD was managed by a group of qualified, enthusiatic and experienced individuals. The main business activities were interior design, construction & renovation and technological services.">
 	<meta name="keywords"
 		  content="architecture,building,business,garden design,house,interior design,landscape design,property,studio,security system,cleaning,services maintanance">
-	<meta name="author" content="">
 
-{{--	<meta property="og:title" content="Covid19">
-	<meta property="og:image" content="http://jhl.pika.asia/images/covid.jpg">
-	<meta property="og:description" content="Sample description">
-	<meta property="og:url" content="http://jhl.pika.asia/">--}}
 
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
 
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv.js"></script>
@@ -172,8 +174,10 @@
 					</div>
 				</div> -->
 
-				<div class="col-md-4">
-					<h3>Contact Us</h3>
+				<div class="col-md-4 col-sm-12 text-md-left text-center">
+
+					<img src="/images/jhlmaju_rev2.png" alt="{{ config('app.name') }}" class="img-responsive"/>
+					{{--<h3>Contact Us</h3>
 					<div class="widget widget-address">
 						<address>
 							<span>JHL Maju</span>
@@ -182,26 +186,25 @@
 							<span><strong>Email:</strong><a href="mailto:jhlgroup@live.com">jhlgroup@live.com</a></span>
 
 						</address>
-					</div>
+					</div>--}}
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-12 text-md-left text-center">
 					<h3>Contact Us</h3>
 					<div class="widget widget-address">
 						<address>
-							<span>Jac Design</span>
-							<span><strong>Name:</strong>Jackson</span>
-							<span><strong>Phone:</strong>+6012-601 0776</span>
+							<span>JHL Maju</span>
+							<span><strong>Name:</strong>Anqi</span>
+							<span><strong>Phone:</strong>(+60) 011-1081 1096</span>
 							<span><strong>Email:</strong><a href="mailto:jhlgroup@live.com">jhlgroup@live.com</a></span>
 
 						</address>
 					</div>
 				</div>
-				<div class="col-md-4">
-					<img src="images/logo.png" class="logo-small" alt=""><br> JHL MAJU SDN BHD
+				<div class="col-md-4 col-sm-12 text-md-left text-center">
+					<img src="/images/jhlgroup.png" class="logo-small img-responsive" alt=""><br> JHL MAJU SDN BHD
 					was managed by a group of qualified, enthusiatic and experienced individuals. During the early
 					set-up of the company, the main business activities were interior design, construction & renovation
-					and technological services. We have since started to offer technical assistance in concept and
-					branding operation and maintenance services.
+					and technological services.
 				</div>
 			</div>
 		</div>
@@ -210,7 +213,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
-						&copy; Copyright 2020 - JHL Group</span>
+						<span>&copy; Copyright 2020 - JHL Group</span>
 					</div>
 					<div class="col-md-6 text-right">
 						<div class="social-icons">
