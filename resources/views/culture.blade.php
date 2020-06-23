@@ -9,9 +9,9 @@
                     <div class="col-md-12">
                         <h1>Our Culture</h1>
                         <ul class="crumb">
-                            <li><a href="/home">Home</a></li>
+                            <li><a href="{{ url('/') }}">Home</a></li>
                             <li class="sep">/</li>
-                            <li><a href="/about">About Us</a></li>
+                            <li><a href="{{ route('about') }}">About Us</a></li>
                             <li class="sep">/</li>
                             <li>Our Culture</li>
                         </ul>
@@ -38,7 +38,7 @@
                             <div class="box-icon" style="background-size: cover;">
                                 <span class="icon"><i class="fa fa-rocket id-color"></i></span>
                                 <div class="text" style="background-size: cover;">
-                                    <h3 class="id-color">TRUSH</h3>
+                                    <h3 class="id-color">TRUST</h3>
                                     <p>A positive attitude improves our work, which is honesty
 </p>
                                 </div>

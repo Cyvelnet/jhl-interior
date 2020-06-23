@@ -108,8 +108,8 @@
 				<div class="col-md-12">
 					<!-- logo begin -->
 					<div id="logo">
-						<a href="/home">
-							<img class="logo" src="images/logo.png" alt="">
+						<a href="{{ url('/') }}">
+							<img class="logo" src="/images/jhlgroup.png" alt="">
 						</a>
 					</div>
 					<!-- logo close -->
@@ -121,8 +121,8 @@
 					<!-- mainmenu begin -->
 					<nav>
 						<ul id="mainmenu">
-							<li><a href="/">Home</a></li>
-							<li><a href="/about">About Us</a>
+							<li><a href="{{ url('/') }}">Home</a></li>
+							<li><a href="{{ route('about') }}">About Us</a>
 								<ul>
 									<li><a href="/culture">Our Culture</a></li>
 									<li><a href="/mission">Mission & Vision</a></li>
@@ -130,19 +130,19 @@
 									<li><a href="/info">Company Information</a></li>--}}
 								</ul>
 							</li>
-							<li><a href="/services">Our Services</a>
+							<li><a href="{{ route('services') }}">Our Services</a>
 								<ul>
 									<li><a href="{{ route('business-nature') }}">NATURE OF BUSINESS</a></li>{{--
 										<li><a href="/core">Core BUSINESS</a></li>--}}
 								</ul>
 							</li>
-							<li><a href="/projects">Projects</a>
+							<li><a href="{{ route('projects.index') }}">Projects</a>
 								<!-- 	<ul>
 										<li><a href="/projects/new">New Projects</a></li>
 										<li><a href="/projects/current">Current Projects</a></li>
 									</ul> -->
 							</li>
-							<li><a href="/contact">Contact</a></li>
+							<li><a href="{{ route('contact') }}">Contact</a></li>
 						</ul>
 					</nav>
 
@@ -176,7 +176,7 @@
 
 				<div class="col-md-4 col-sm-12 text-md-left text-center">
 
-					<img src="/images/jhlmaju_rev2.png" alt="{{ config('app.name') }}" class="img-responsive"/>
+					<img src="/images/jhlgroup.png" alt="{{ config('app.name') }}" class="img-responsive" style="max-width: 130px; margin-top: 16px;"/>
 					{{--<h3>Contact Us</h3>
 					<div class="widget widget-address">
 						<address>
@@ -192,8 +192,8 @@
 					<h3>Contact Us</h3>
 					<div class="widget widget-address">
 						<address>
-							<span>JHL Maju</span>
-							<span><strong>Name:</strong>Anqi</span>
+							<span>JHL Maju</span>{{--
+							<span><strong>Name:</strong>Anqi</span>--}}
 							<span><strong>Phone:</strong>(+60) 011-1081 1096</span>
 							<span><strong>Email:</strong><a href="mailto:jhlgroup@live.com">jhlgroup@live.com</a></span>
 
@@ -201,7 +201,9 @@
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-12 text-md-left text-center">
-					<img src="/images/jhlgroup.png" class="logo-small img-responsive" alt=""><br> JHL MAJU SDN BHD
+					<div class=" text-md-center">
+						<img src="/images/jhlmaju_rev2.png" class="logo-small img-responsive" alt="">
+					</div>JHL MAJU SDN BHD
 					was managed by a group of qualified, enthusiatic and experienced individuals. During the early
 					set-up of the company, the main business activities were interior design, construction & renovation
 					and technological services.
