@@ -7,7 +7,7 @@
 	<meta name="description"
 		  content="JHL MAJU SDN BHD was managed by a group of qualified, enthusiatic and experienced individuals. The main business activities were interior design, construction & renovation and technological services.">
 	<meta name="keywords"
-		  content="architecture,building,business,garden design,house,interior design,landscape design,property,studio,security system,cleaning,services maintanance">
+		  content="architecture,building,business,garden design,house,interior design,landscape design,property,studio,security system,cleaning,rectification works,maintenance service,interior design">
 
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">

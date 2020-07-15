@@ -10,7 +10,7 @@
 				<ul>
 					<li data-transition="fade" data-slotamount="10" data-masterspeed="200" data-thumb="">
 						<!--  BACKGROUND IMAGE -->
-						<img src="/images/slider/wide1.jpg" alt=""/>
+						<img src="/images/slider/wide1.jpg" alt="Rectification Works" title="Rectification Works"/>
 						<div class="tp-caption big-white sft" data-x="0" data-y="150" data-speed="800" data-start="400"
 							 data-easing="easeInOutExpo"
 							 data-endspeed="450">
@@ -33,7 +33,7 @@
 
 					<li data-transition="fade" data-slotamount="10" data-masterspeed="200" data-thumb="">
 						<!--  BACKGROUND IMAGE -->
-						<img src="/images/slider/wide2.jpg" alt=""/>
+						<img src="/images/slider/wide2.jpg" alt="Maintenance Services" title="Maintenance Services"/>
 						<div class="tp-caption big-white sft" data-x="0" data-y="160" data-speed="800" data-start="400"
 							 data-easing="easeInOutExpo"
 							 data-endspeed="450">
@@ -49,14 +49,14 @@
 
 						<div class="tp-caption sfb" data-x="0" data-y="335" data-speed="400" data-start="800"
 							 data-easing="easeInOutExpo">
-							<a href="#" class="btn-slider">Our Portfolio
+							<a href="{{ route('projects.index') }}" class="btn-slider">Our Portfolio
 							</a>
 						</div>
 					</li>
 
 					<li data-transition="fade" data-slotamount="10" data-masterspeed="200" data-thumb="">
 						<!--  BACKGROUND IMAGE -->
-						<img src="/images/slider/wide3.jpg" alt=""/>
+						<img src="/images/slider/wide3.jpg" alt="Interior Design" title="Interior Design"/>
 						<div class="tp-caption big-white sft" data-x="0" data-y="160" data-speed="800" data-start="400"
 							 data-easing="easeInOutExpo"
 							 data-endspeed="450">
@@ -67,12 +67,12 @@
 							 data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:2;scaleY:2;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
 							 data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.85;scaleY:0.85;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
 							 data-speed="800" data-start="400" data-easing="easeInOutExpo" data-endspeed="400">
-							RECTIFICATION WORKS
+							Interior Design
 						</div>
 
 						<div class="tp-caption sfb" data-x="0" data-y="335" data-speed="400" data-start="800"
 							 data-easing="easeInOutExpo">
-							<a href="#" class="btn-slider">Our Portfolio
+							<a href="{{ route('projects.index') }}" class="btn-slider">Our Portfolio
 							</a>
 						</div>
 					</li>
