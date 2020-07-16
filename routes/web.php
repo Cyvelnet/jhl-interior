@@ -21,9 +21,11 @@ Route::view('/mission', 'mission')->name('mission');;/*
 Route::view('/chart', 'chart');*/
 Route::view('/services', 'services')->name('services');;/*
 Route::view('/info', 'info');*/
-Route::view('/our-business-nature', 'nature')->name('business-nature');/*
+/*Route::view('/our-business-nature', 'nature')->name('business-nature');
 Route::view('/core', 'core');*/
-Route::view('/contact', 'contact')->name('contact');;
+
+Route::get('contact', 'ContactUsController@index')->name('contact');
+Route::post('contact', 'ContactUsController@store');
 
 Route::resource('projects', 'ProjectController')->only(['show', 'index']);
 
