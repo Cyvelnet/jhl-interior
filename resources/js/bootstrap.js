@@ -22,6 +22,12 @@ window._ = require('lodash');
 window.Vue = Vue;
 global.VueRouter = window.VueRouter = VueRouter;
 window.VeeValidate = require('vee-validate');
+import 'froala-editor/js/plugins.pkgd.min.js';
+//Import third party plugins
+
+import VueFroala from 'vue-froala-wysiwyg';
+
+Vue.use(VueFroala);
 
 Vue.use(VueRouter);
 Vue.use(ToggleButton);
