@@ -130,11 +130,11 @@
 									<li><a href="/info">Company Information</a></li>--}}
 								</ul>
 							</li>
-							<li><a href="{{ route('services') }}">Our Services</a>
+							<li><a href="{{ route('services') }}">Our Services</a>{{--
 								<ul>
-									<li><a href="{{ route('business-nature') }}">NATURE OF BUSINESS</a></li>{{--
-										<li><a href="/core">Core BUSINESS</a></li>--}}
-								</ul>
+									<li><a href="{{ route('business-nature') }}">NATURE OF BUSINESS</a></li>--}}{{--
+										<li><a href="/core">Core BUSINESS</a></li>--}}{{--
+								</ul>--}}
 							</li>
 							<li><a href="{{ route('projects.index') }}">Projects</a>
 								<!-- 	<ul>
@@ -250,8 +250,8 @@
 <script src="js/owl.carousel.js"></script>
 <script src="js/jquery.countTo.js"></script>
 <script src="js/classie.js"></script>
-<script src="js/video.resize.js"></script>
-<script src="js/validation.js"></script>
+<script src="js/video.resize.js"></script>{{--
+<script src="js/validation.js"></script>--}}
 <script src="js/wow.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/jquery.stellar.min.js"></script>

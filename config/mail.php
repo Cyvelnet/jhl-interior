@@ -70,6 +70,9 @@ return [
         'array' => [
             'transport' => 'array',
         ],
+        'preview' => [
+            'transport' => 'preview',
+        ],
     ],
 
     /*
