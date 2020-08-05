@@ -198,7 +198,7 @@
 							<div class="nav-item has-sub"
 								 :class="{open: isRouteMatchesAny(['projects.index', 'project-categories.index'])}">
 								<a><i class="ik ik-layers"></i><span>Projects</span> <span
-											class="badge badge-danger">150+</span></a>
+											class="badge badge-success">{{ $project_count }}</span></a>
 
 								<div class="submenu-content">
 									@can('projects.read')

@@ -178,7 +178,8 @@ return [
         App\Providers\LocalServiceProvider::class,
         App\Providers\AdminServiceProvider::class,
         App\Providers\MacroServiceProvider::class,
-        Themsaid\MailPreview\MailPreviewServiceProvider::class,
+        App\Providers\ViewComposerServiceProvider::class,
+        //Themsaid\MailPreview\MailPreviewServiceProvider::class,
 
     ],
 
