@@ -1,4 +1,5 @@
 {
     "/admin/js/app.js": "/admin/js/app.js",
-    "/admin/css/app.css": "/admin/css/app.css"
+    "/admin/css/app.css": "/admin/css/app.css",
+    "/resources/js/froala_editor.pkgd.min.js": "/resources/js/froala_editor.pkgd.min.js"
 }

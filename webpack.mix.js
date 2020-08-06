@@ -12,4 +12,5 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/admin/js')
+    .minify('resources/js/froala_editor.pkgd.js', 'public/admin/js')
     .sass('resources/sass/app.scss', 'public/admin/css');

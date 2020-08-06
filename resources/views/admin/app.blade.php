@@ -13,7 +13,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800" rel="stylesheet">
 
 	<link rel="stylesheet" href="/admin/plugins/bootstrap/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/admin/plugins/fontawesome-free/css/all.min.css">
 	<link rel="stylesheet" href="/admin/plugins/icon-kit/dist/css/iconkit.min.css">
 	<link rel="stylesheet" href="/admin/plugins/ionicons/dist/css/ionicons.min.css">
 	<link rel="stylesheet" href="/admin/plugins/perfect-scrollbar/css/perfect-scrollbar.css">
@@ -25,7 +24,13 @@
 	<link rel="stylesheet" href="/admin/plugins/owl.carousel/dist/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="/admin/plugins/owl.carousel/dist/assets/owl.theme.default.min.css">
 	<link rel="stylesheet" href="/admin/css/theme.min.css">
-	<link rel="stylesheet" href="{{ asset('admin/css/app.css') }}">{{--
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="{{ asset('admin/css/app.css') }}">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.8.1/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.8.1/css/froala_style.min.css" rel="stylesheet" type="text/css" />
+
+
+	{{--
 	<script src="src/js/vendor/modernizr-2.8.3.min.js"></script>--}}
 </head>
 
@@ -1269,6 +1274,7 @@
 <script src="/admin/js/charts.js"></script>--}}
 <script src="/admin/js/theme.min.js"></script>
 <script src="{{ mix('/admin/js/app.js') }}" type="text/javascript"></script>
+<script src="{{ asset('/admin/js/froala_editor.pkgd.min.js') }}" type="text/javascript"></script>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 {{--<script>
     (function (b, o, i, l, e, r) {
