@@ -70,7 +70,7 @@
 				@endif
 
 				<p>
-				<h4>Our Solutions</h4>
+				<h4>About This Project</h4>
 				{!! $project->description !!}
 				</p>
 
