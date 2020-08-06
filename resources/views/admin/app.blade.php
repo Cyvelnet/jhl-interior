@@ -17,16 +17,16 @@
 	<link rel="stylesheet" href="/admin/plugins/icon-kit/dist/css/iconkit.min.css">
 	<link rel="stylesheet" href="/admin/plugins/ionicons/dist/css/ionicons.min.css">
 	<link rel="stylesheet" href="/admin/plugins/perfect-scrollbar/css/perfect-scrollbar.css">
-	<link rel="stylesheet" href="/admin/plugins/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
+	<link rel="stylesheet" href="/admin/plugins/datatables.net-bs4/css/dataTables.bootstrap4.min.css">{{--
 	<link rel="stylesheet" href="/admin/plugins/jvectormap/jquery-jvectormap.css">
-	<link rel="stylesheet" href="/admin/plugins/tempusdominus-bootstrap-4/build/css/tempusdominus-bootstrap-4.min.css">
+	<link rel="stylesheet" href="/admin/plugins/tempusdominus-bootstrap-4/build/css/tempusdominus-bootstrap-4.min.css">--}}
 	<link rel="stylesheet" href="/admin/plugins/weather-icons/css/weather-icons.min.css">
 	<link rel="stylesheet" href="/admin/plugins/c3/c3.min.css">
 	<link rel="stylesheet" href="/admin/plugins/owl.carousel/dist/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="/admin/plugins/owl.carousel/dist/assets/owl.theme.default.min.css">
 	<link rel="stylesheet" href="/admin/css/theme.min.css">
-	<link rel="stylesheet" href="{{ asset('admin/css/app.css') }}">
-	<script src="src/js/vendor/modernizr-2.8.3.min.js"></script>
+	<link rel="stylesheet" href="{{ asset('admin/css/app.css') }}">{{--
+	<script src="src/js/vendor/modernizr-2.8.3.min.js"></script>--}}
 </head>
 
 <body>
@@ -1257,16 +1257,16 @@
 <script src="/admin/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
 <script src="/admin/plugins/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
 <script src="/admin/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-<script src="/admin/plugins/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+<script src="/admin/plugins/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>{{--
 <script src="/admin/plugins/jvectormap/jquery-jvectormap.min.js"></script>
 <script src="/admin/plugins/jvectormap/tests/assets/jquery-jvectormap-world-mill-en.js"></script>
 <script src="/admin/plugins/moment/moment.js"></script>
-<script src="/admin/plugins/tempusdominus-bootstrap-4/build/js/tempusdominus-bootstrap-4.min.js"></script>
+<script src="/admin/plugins/tempusdominus-bootstrap-4/build/js/tempusdominus-bootstrap-4.min.js"></script>--}}
 <script src="/admin/plugins/d3/dist/d3.min.js"></script>
 <script src="/admin/plugins/c3/c3.min.js"></script>
-<script src="/admin/js/tables.js"></script>
+{{--<script src="/admin/js/tables.js"></script>
 <script src="/admin/js/widgets.js"></script>
-<script src="/admin/js/charts.js"></script>
+<script src="/admin/js/charts.js"></script>--}}
 <script src="/admin/js/theme.min.js"></script>
 <script src="{{ mix('/admin/js/app.js') }}" type="text/javascript"></script>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
