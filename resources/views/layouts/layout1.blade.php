@@ -35,6 +35,12 @@
 	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 
+	<style>
+		p[data-f-id='pbf']{
+			display: none;
+		}
+	</style>
+
 	<!-- custom background -->
 	<link rel="stylesheet" href="css/bg.css" type="text/css">
 
