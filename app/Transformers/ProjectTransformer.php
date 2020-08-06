@@ -38,6 +38,7 @@ class ProjectTransformer extends TransformerAbstract
      */
     public function transform(Project $resource)
     {
+        $valueInText = number_format($resource->value, 2);
         return [
             'id'             => (int) $resource->id,
             'name'           => $resource->name,
@@ -47,7 +48,8 @@ class ProjectTransformer extends TransformerAbstract
             'description'    => $resource->description,
             'currency'       => 'RM',
             'value'          => $resource->value,
-            'value_pretty'   => number_format($resource->value, 2),
+            'value_text'     => $resource->value ? "RM{$valueInText}" : '-Not Specified-',
+            'value_pretty'   => $valueInText,
             'client_name'    => $resource->client_name,
             'client_website' => $resource->client_website,
             'date'           => $resource->date,

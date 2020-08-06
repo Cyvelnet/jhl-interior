@@ -1273,8 +1273,8 @@
 <script src="/admin/js/widgets.js"></script>
 <script src="/admin/js/charts.js"></script>--}}
 <script src="/admin/js/theme.min.js"></script>
-<script src="{{ mix('/admin/js/app.js') }}" type="text/javascript"></script>
 <script src="{{ asset('/admin/js/froala_editor.pkgd.min.js') }}" type="text/javascript"></script>
+<script src="{{ mix('/admin/js/app.js') }}" type="text/javascript"></script>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 {{--<script>
     (function (b, o, i, l, e, r) {
